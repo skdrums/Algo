@@ -1,3 +1,5 @@
+//直接選択法p121
+
 #include <stdio.h>
 #include <iostream>
 

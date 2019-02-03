@@ -1,3 +1,8 @@
+//シェイカーソートp124
+
+
+
+
 #include <stdio.h>
 #include <iostream>
 
