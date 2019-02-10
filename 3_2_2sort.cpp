@@ -12,12 +12,17 @@ int main(void){
     random_device rnd;
     mt19937 mt(rnd());
     int a[N],gap,t;
-    gap=N/2;
+    
+    //データをランダムに決める
     for(int i = 0; i < N; i++)
     {
         a[i]=mt()%100;
     }
 
+    //データ数より小さい範囲で最大のgapを決める。p133参照
+    for(gap = 1; gap < N; gap=gap*3+1);
+    
+    //シェルソート
     while(gap>0){
         for(int k = 0; k < gap; k++)
         {
@@ -28,6 +33,8 @@ int main(void){
                     if(a[j]>a[j+gap]){
                         t=a[j]; a[j]=a[j+gap]; a[j+gap]=t;
                     }
+                    else 
+                        break;
                 }
                 
             }
@@ -36,6 +43,7 @@ int main(void){
         
         gap/=2;
     }
+
     for(int i=0;i<N;i++){
         printf("%5d",a[i]);
     }
