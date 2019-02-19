@@ -1,4 +1,4 @@
-//マージ
+//マージ(sortされた２つ以上の配列を一つにする)
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
