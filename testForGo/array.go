@@ -11,24 +11,22 @@ func main(){
 	var arr1 = [5]int{4,5,5,8,9} // variable変数 
 	var arr2 = [...]string{"sora","yoko","ryo","shoto","mei"}// ...で長さを暗黙的に指定
 
-	//slice (可変長)
-	//var slice []int
-	slice2 := []string{"sora","yoko","ryo","shoto","mei"}
 
-	fmt.Println("array..")
-	for i :=0; i<N; i++{
-		fmt.Println(arr1[i])
-	}
 	fmt.Print("\n")
-	fmt.Println("array..")
-	for i :=0; i<N; i++{
-		fmt.Println(arr2[i])
-	}
-	fmt.Print("\n")
-	fmt.Println("slice..")
-	for i :=0; i<N; i++{
-		fmt.Println(slice2[i])
-	}
-	fmt.Print("\n")
+	fn(arr1)
+	fn2(arr2)
+	
 
+}
+
+func fn(arr [5]int){
+	fmt.Println("array..")
+	fmt.Println(arr)
+	fmt.Print("\n")
+}
+
+func fn2(arr [5]string){
+	fmt.Println("array..")
+	fmt.Println(arr)
+	fmt.Print("\n")
 }
