@@ -45,8 +45,8 @@ func main() {
 	p:= new(Point3d)
 	p.x, p.y, p.z =3,4,5
 	fmt.Println(a[0])
-	fmt.Println(a[0].distance)
-	fmt.Println(a[1].distance)
+	fmt.Printf("%b\n",a[0].distance)
+	fmt.Printf("%.3v\n",a[1].distance)
 	fmt.Println(a[2].distance)
 	fmt.Println(a[3].distance)
 	fmt.Println(math.Sqrt(p.x*p.x+p.y*p.y))
